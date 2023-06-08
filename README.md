@@ -10,7 +10,7 @@
 
 ## Description
 
-React application of [NFT Marketplace](https://wiki.gear-tech.io/examples/marketplace) based on [NFT](https://github.com/gear-dapps/non-fungible-token/tree/master/nft) and [Marketplace](https://github.com/gear-dapps/non-fungible-token/tree/master/nft-marketplace) Rust smart-contracts.
+React application of BCRA Marketplace based on [NFT](https://github.com/gear-dapps/non-fungible-token/tree/master/nft) and [Marketplace](https://github.com/gear-dapps/non-fungible-token/tree/master/nft-marketplace) Rust smart-contracts.
 
 ## Getting started
 
@@ -33,3 +33,11 @@ In case of issues with the application, try to switch to another network or run 
 ```sh
 yarn start
 ```
+
+### Fill your factor risks and upload some mammogram to start the analysis
+Warning: You must run some Primary Notebook.
+
+
+1. Create NFT
+2. Accept permissions
+3. Fill your factor risks
