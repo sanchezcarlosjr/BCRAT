@@ -26,5 +26,10 @@ git checkout devel
 
 
 # Instructions to start Primary Notebook and Replica Notebook
-We've trained a Random Forest that you can checkout on 
+We've trained a Random Forest that you can checkout on https://gist.github.com/sanchezcarlosjr/bfdbf294e8a89e81c005ac9f8a74a413. You can download that model on http://tesis.infura-ipfs.io/ipfs/QmUNXzsrNxYzYpL7qggVybMP61q4aPHocufva9RXtRjxHw
+
+
+
+
+
 
