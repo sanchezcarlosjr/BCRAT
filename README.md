@@ -24,12 +24,11 @@ git checkout devel
 
 3. Please follow the instructions on that branch
 
-
-# Instructions to start Primary Notebook and Replica Notebook
+# Instructions to start Primary Notebook
 We've trained a Random Forest that you can checkout on https://gist.github.com/sanchezcarlosjr/bfdbf294e8a89e81c005ac9f8a74a413. You can download that model on http://tesis.infura-ipfs.io/ipfs/QmUNXzsrNxYzYpL7qggVybMP61q4aPHocufva9RXtRjxHw
-
-
-
+Primary Notebook runs the model, Replica Notebook calls te Primary Notebook with user factor risks. You must run the code in Notebook on Chromium-based. 
+ [https://notebook.sanchezcarlosjr.com](https://notebook.sanchezcarlosjr.com/?u=https://github.com/sanchezcarlosjr/mega-hackathon-web3/blob/main/evanotebook-replica.json)
+It assigns an entity name.
 
 
 
