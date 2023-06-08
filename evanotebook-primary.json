@@ -1,0 +1,79 @@
+[
+  {
+    "id": "4GDcaW1Usm",
+    "type": "header",
+    "data": {
+      "text": "Code",
+      "level": 2
+    },
+    "index": 0,
+    "createdBy": "kifavibmys",
+    "lastEditedBy": "kifavibmys",
+    "topic": "ozuaxlsbyj"
+  },
+  {
+    "id": "sJXD7E4M2w",
+    "type": "code",
+    "data": {
+      "code": "import pickle\nimport io\nfrom pyodide.http import pyfetch\nimport micropip\nawait micropip.install(\"scikit-learn\")\n\nresponse = await pyfetch(\"http://localhost:8000/breast_cancer_model.sav\")\n\nmodel = pickle.loads(await response.bytes())\n\"<div></div>\"",
+      "language": "python",
+      "output": "<div></div>"
+    },
+    "index": 1,
+    "createdBy": "kifavibmys",
+    "lastEditedBy": "qblthdaozo",
+    "topic": "ozuaxlsbyj"
+  },
+  {
+    "id": "gGOudziJGp",
+    "type": "code",
+    "data": {
+      "code": "import js\n\ndef predict(factor_risks):\n  return model.predict([[factor_risk for factor_risk in factor_risks]])\n\njs.window.predict = predict",
+      "language": "python",
+      "output": "undefined"
+    },
+    "index": 2,
+    "createdBy": "kifavibmys",
+    "lastEditedBy": "qblthdaozo",
+    "topic": "ozuaxlsbyj"
+  },
+  {
+    "id": "O0cGvrdJZs",
+    "type": "code",
+    "data": {
+      "code": "model.predict([[7,1,0,2,2]])[0]",
+      "language": "python",
+      "output": "3"
+    },
+    "index": 3,
+    "createdBy": "kifavibmys",
+    "lastEditedBy": "qblthdaozo",
+    "topic": "ozuaxlsbyj"
+  },
+  {
+    "id": "_p6A7sZudH",
+    "type": "code",
+    "data": {
+      "code": "predict([7,1,0,2,2])",
+      "language": "python",
+      "output": "array([3], dtype=int64)"
+    },
+    "index": 4,
+    "createdBy": "kifavibmys",
+    "lastEditedBy": "kifavibmys",
+    "topic": "ozuaxlsbyj"
+  },
+  {
+    "id": "2A6JWU9RBw",
+    "type": "code",
+    "data": {
+      "code": "<section id=\"peers\"></section>\n\n<script type=\"module\">\n  function createItem(name) {\n    let p = document.createElement('p');\n    p.classList.add(\"w100\");\n    p.textContent = name;\n    return p;\n }\n peerGlobalMessage$.subscribe(({message, peer}) => {\n    document.getElementById(\"peers\").appendChild(createItem(peer.id))\n    peer.send(Number(predict(message).toJs()[0]));\n });\n</script>",
+      "language": "html",
+      "output": ""
+    },
+    "index": 5,
+    "createdBy": "kifavibmys",
+    "lastEditedBy": "qblthdaozo",
+    "topic": "ozuaxlsbyj"
+  }
+]
