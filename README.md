@@ -29,6 +29,6 @@ We've trained a Random Forest that you can checkout on https://gist.github.com/s
 Primary Notebook runs the model, Replica Notebook calls te Primary Notebook with user factor risks. You must run the code in Notebook on Chromium-based. 
  [https://notebook.sanchezcarlosjr.com](https://notebook.sanchezcarlosjr.com/?u=https://raw.githubusercontent.com/sanchezcarlosjr/mega-hackathon-web3/main/evanotebook-primary.json)
 It assigns an entity name.
-
+By default, our app uses our primary notebook. However, you can use your own model.
 
 
