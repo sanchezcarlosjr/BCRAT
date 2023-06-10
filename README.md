@@ -1,6 +1,6 @@
 # Breast Cancer Risk Assessment Tool (BCRAT)
 
-Breast Cancer Risk Assessment Tool (BCRAT) helps people, especially women, access a tool for detecting and evaluating the risk factor of getting breast cancer in the early stages. BCRAT incentivizes users to upload their information by always protecting their data with the blockchain protocol and getting remote healthcare support by calculating their risks of getting cancer with a machine learning model trained with other people’s data anonymously.
+Breast Cancer Risk Assessment Tool (BCRAT) helps women access a tool for detecting and evaluating the risk factor of getting breast cancer in the early stages. BCRAT incentivizes users to upload their information by always protecting their data with the blockchain protocol and getting remote healthcare support by calculating their risks of getting cancer with a machine learning model trained with other people’s data anonymously.
 
 To utilize the tool, people need to upload their basic information: age, sex, height, weight, body measurements, basic family history, and others. We assure people to protect their information by making it untraceable and incapable to associate a person with their data. Subsequently, we utilize machine learning algorithms with all the information available in the app and calculate user’s risks of getting breast cancer so they can access treatment in the early stages.
 
