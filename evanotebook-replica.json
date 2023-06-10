@@ -7,9 +7,9 @@
       "level": 2
     },
     "index": 0,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
   },
   {
     "id": "UDnNegJ8D2",
@@ -18,10 +18,23 @@
       "type": "danger",
       "message": "The less the better. The marked circle is your current BIRADS stage. This tool is used to give an approximation of BIRADS and DOES NOT replace any medical advice."
     },
-    "index": 1,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
+    "index": 2,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
+  },
+  {
+    "id": "3cNfCvjvR4",
+    "type": "code",
+    "data": {
+      "code": "<script>\n setTimeout(_ => {\n    const dataConnection = peer.connect(new URL(location.href).searchParams.get(\"primary\"));\n    dataConnection.on(\"data\", (x) => {\n        if (typeof x === \"string\")\n           return;\n        const birads = document.getElementById(\"birads\").children[x - 1];\n        const [_, r, g, b] = getComputedStyle(birads).backgroundColor.match(/rgba\\((\\d+), (\\d+), (\\d+), .*\\)/)\n        document.getElementById(\"birads\").children[x - 1].style.backgroundColor = `rgba(${r}, ${g}, ${b}, 1)`;\n    });\n    dataConnection.on(\"open\", () => {\n      fetch(new URL(location.href).searchParams.get(\"factor_risk\"))\n        .then(x => x.json())\n        .then(x => x.attributes)\n        .then(response => dataConnection.send({\n            message: Object.values(response)\n        }))\n    })\n}, 1500)\n</script>",
+      "language": "html",
+      "output": ""
+    },
+    "index": 4,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
   },
   {
     "id": "5jJR5x703v",
@@ -31,10 +44,10 @@
       "language": "html",
       "output": "<style>\n.traffic-light {\n  display: flex;\n  justify-content: space-between;\n  padding: 10px;\n}\n\n.circle {\n  position: relative;\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n}\n\n.circle span {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  color: #FFFFFF;\n  font-size: 16px;\n}\n\n  \n.birads1 {\n  background-color: rgba(255, 0, 0, 0.3);\n}\n\n.birads2 {\n  background-color: rgba(178, 34, 34, 0.3);\n}\n\n.birads3 {\n  background-color: rgba(220, 20, 60, 0.3);\n}\n\n.birads4 {\n  background-color: rgba(220, 20, 60, 0.3);\n}\n</style>\n\n<div id=\"birads\" class=\"traffic-light w100\">\n  <div id=\"1\" class=\"circle birads1\"><span>1</span></div>\n  <div id=\"2\" class=\"circle birads2\"><span>2</span></div>\n  <div id=\"3\" class=\"circle birads3\"><span>3</span></div>\n  <div id=\"4\" class=\"circle birads4\"><span>4</span></div>\n</div>"
     },
-    "index": 2,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
+    "index": 4,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
   },
   {
     "id": "2CNSWxRVSe",
@@ -46,23 +59,10 @@
       "withBackground": false,
       "stretched": false
     },
-    "index": 3,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
-  },
-  {
-    "id": "3cNfCvjvR4",
-    "type": "code",
-    "data": {
-      "code": "<script>\n setTimeout(_ => {\n    window.dataConnection = peer.connect(new URL(location.href).searchParams.get(\"primary\"));\n    dataConnection.on(\"data\", (x) => {\n        if (typeof x === \"string\")\n           return;\n        const birads = document.getElementById(\"birads\").children[x - 1];\n        const [_, r, g, b] = getComputedStyle(birads).backgroundColor.match(/rgba\\((\\d+), (\\d+), (\\d+), .*\\)/)\n        document.getElementById(\"birads\").children[x - 1].style.backgroundColor = `rgba(${r}, ${g}, ${b}, 1)`;\n    });\n    dataConnection.on(\"open\", () => {\n      fetch(`https://ipfs-gw.gear-tech.io/ipfs/${new URL(location.href).searchParams.get(\"cid\")}`)\n        .then(x => x.json())\n        .then(x => x.attributes)\n        .then(response => dataConnection.send({\n            message: Object.values(response)\n        }))\n    })\n}, 1500)\n</script>",
-      "language": "html",
-      "output": ""
-    },
-    "index": 4,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
+    "index": 6,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
   },
   {
     "id": "949oTm-ak1",
@@ -70,10 +70,23 @@
     "data": {
       "text": "Please note that the information provided and the use of this tool are subject to certain legal constraints. This tool is intended for informational purposes only and should not be considered a substitute for professional medical advice, diagnosis, or treatment. It is important to consult with a qualified healthcare professional or medical specialist for accurate assessments and personalized recommendations."
     },
-    "index": 5,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
+    "index": 10,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
+  },
+  {
+    "id": "is1Fx2g57j",
+    "type": "code",
+    "data": {
+      "code": "// If you are prototyping you might not want to do Replication\nif (currentUrl.searchParams.get(\"m\") === \"2\")\n  exit(\"<div></div>\")\n\neditor.blocks.get$.pipe(\n  first(),\n  map(x => {\n    x.pop();\n    return x.map(y => ({\n      id: y.id,\n      type: y.type,\n      data: y.data,\n      index: y.index,\n      createdBy: y.createdBy,\n      lastEditedBy: y.lastEditedBy,\n      topic: y.topic\n    }));\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"BCRAT\",\n    filePath: \"evanotebook-replica.json\",\n    commitMessage: \"feat: migrate from IPFS to whatever storage\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 10,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
   },
   {
     "id": "SFeNKhZKUf",
@@ -81,10 +94,10 @@
     "data": {
       "text": "While every effort has been made to ensure the accuracy and reliability of the information provided by this tool, we cannot guarantee its completeness or suitability for your specific circumstances. The interpretation and application of the results obtained from this tool are solely the responsibility of the user."
     },
-    "index": 6,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
+    "index": 13,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
   },
   {
     "id": "v1sNN-rqAu",
@@ -92,10 +105,10 @@
     "data": {
       "text": "By using this tool, you acknowledge that you understand and agree to the limitations and constraints associated with its use. We strongly advise you to seek proper medical guidance and not solely rely on the information provided here."
     },
-    "index": 7,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
+    "index": 15,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
   },
   {
     "id": "HxCxfrwB30",
@@ -103,20 +116,9 @@
     "data": {
       "text": "Please consult with your healthcare provider or medical professional regarding any questions or concerns you may have about your health or medical condition. In case of a medical emergency, please contact your local emergency services immediately.\""
     },
-    "index": 8,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
-  },
-  {
-    "id": "invrO1elyq",
-    "type": "paragraph",
-    "data": {
-      "text": "Including such a statement helps to ensure that users are aware of the limitations of the tool, encourages them to seek professional advice, and clarifies any legal responsibilities and disclaimers associated with its usage. It is important to adapt the statement to comply with applicable laws and regulations in your jurisdiction."
-    },
-    "index": 9,
-    "createdBy": "jsdlhvhign",
-    "lastEditedBy": "jsdlhvhign",
-    "topic": "pmxtnbpozq"
+    "index": 17,
+    "createdBy": "cgdvdyycgu",
+    "lastEditedBy": "cgdvdyycgu",
+    "topic": "dgfgfgqyul"
   }
 ]
