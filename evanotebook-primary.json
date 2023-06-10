@@ -15,7 +15,7 @@
     "id": "sJXD7E4M2w",
     "type": "code",
     "data": {
-      "code": "import pickle\nimport io\nfrom pyodide.http import pyfetch\nimport micropip\nawait micropip.install(\"scikit-learn\")\n\nresponse = await pyfetch(\"http://localhost:8000/breast_cancer_model.sav\")\n\nmodel = pickle.loads(await response.bytes())\n\"<div></div>\"",
+      "code": "import pickle\nimport io\nfrom pyodide.http import pyfetch\nimport micropip\nawait micropip.install(\"scikit-learn\")\n\nresponse = await pyfetch(\"https://tesis.infura-ipfs.io/ipfs/QmUNXzsrNxYzYpL7qggVybMP61q4aPHocufva9RXtRjxHw?filename=model.sav\")\n\nmodel = pickle.loads(await response.bytes())\n\"<div></div>\"",
       "language": "python",
       "output": "<div></div>"
     },
