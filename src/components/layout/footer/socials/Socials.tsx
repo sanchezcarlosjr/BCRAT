@@ -1,14 +1,12 @@
 import { ReactComponent as Twitter } from 'assets/images/socials/twitter.svg';
-import { ReactComponent as Github } from 'assets/images/socials/github.svg';
-import { ReactComponent as Discord } from 'assets/images/socials/discord.svg';
-import { ReactComponent as Medium } from 'assets/images/socials/medium.svg';
+import { ReactComponent as Instagram } from 'assets/images/socials/instagram.svg';
+import { ReactComponent as Facebook } from 'assets/images/socials/facebook.svg';
 import styles from './Socials.module.scss';
 
 const socials = [
-  { href: 'https://twitter.com/gear_techs', icon: Twitter },
-  { href: 'https://github.com/gear-tech', icon: Github },
-  { href: 'https://discord.com/invite/7BQznC9uD9', icon: Discord },
-  { href: 'https://medium.com/@gear_techs', icon: Medium },
+  { href: 'https://twitter.com/traceablehd', icon: Twitter },
+  { href: 'https://www.facebook.com/TraceableHealthData', icon: Facebook },
+  { href: 'https://www.instagram.com/traceable_health_data/', icon: Instagram },
 ];
 
 function Socials() {
