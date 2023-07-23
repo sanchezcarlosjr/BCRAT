@@ -25,6 +25,10 @@
 .input {
   display: grid;
   grid-template-columns: 4fr 6fr;
+  
+  color: #7B1B70;
+  font-size: large;
+  font-weight: 500;
 }
 
 .error {
