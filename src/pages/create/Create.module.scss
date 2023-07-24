@@ -17,6 +17,7 @@
   @extend %h5;
   margin-bottom: 32px;
   color: #7B1B70;
+  font-weight: 500 !important; 
   background-color: #FEDEEB;
 }
 
@@ -50,6 +51,10 @@
 }
 .button{
   background-color: #7B1B70;
+  transition: all .25s !important;
+  &:hover {
+    background-color: #7b1b706d !important;
+  }
 }
 
 .input {
