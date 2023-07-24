@@ -76,7 +76,7 @@ function Create() {
 
   return (
     <>
-      <h2 className={styles.heading}>Create NFT</h2>
+      <h2 className={styles.heading}>Create medical record</h2>
       <div className={styles.main}>
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.item}>
