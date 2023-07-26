@@ -24,8 +24,8 @@ git checkout devel
 
 3. Please follow the instructions on that branch
 
-# Instructions to start Primary Notebook
-We've trained a Random Forest that you can checkout on https://gist.github.com/sanchezcarlosjr/bfdbf294e8a89e81c005ac9f8a74a413. You can download that model on http://tesis.infura-ipfs.io/ipfs/QmUNXzsrNxYzYpL7qggVybMP61q4aPHocufva9RXtRjxHw
+# Instructions to start Primary Notebook which is based on Factor risks
+We've trained a Random Forest that you can checkout on [Gist](https://gist.github.com/sanchezcarlosjr/bfdbf294e8a89e81c005ac9f8a74a413). You can download that model on [IPFS](http://tesis.infura-ipfs.io/ipfs/QmUNXzsrNxYzYpL7qggVybMP61q4aPHocufva9RXtRjxHw)
 Primary Notebook runs the model, Replica Notebook calls te Primary Notebook with user factor risks. You must run the code in Notebook on Chromium-based. 
  [Evanotebook Primary](https://notebook.sanchezcarlosjr.com/?u=https://raw.githubusercontent.com/sanchezcarlosjr/mega-hackathon-web3/main/evanotebook-primary.json)
 It assigns an entity name (the ``p`` search parameter), so your application url have got to looks like [Evanotebook Replica](https://notebook.sanchezcarlosjr.com/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fsanchezcarlosjr%2FBCRAT%2Fmain%2Fevanotebook-replica.json&factor_risk=https%3A%2F%2Fraw.githubusercontent.com%2Fsanchezcarlosjr%2FBCRAT%2Fmain%2Ffactor-risk-example.json&primary=eceamnulku&m=2), where you must replace primary with previous p search parameter and factork_risk with your favorite storage.
