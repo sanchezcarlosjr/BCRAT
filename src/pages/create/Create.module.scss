@@ -16,34 +16,55 @@
 .heading {
   @extend %h5;
   margin-bottom: 32px;
+  color: #7B1B70;
+  font-weight: 500 !important; 
+  background-color: #FEDEEB;
 }
 
 .main {
   padding: 25px 40px;
-  background-color: #212121;
+  background-color: #DE9AB7;
   border: 1px dashed #0e0e0e;
   border-radius: $borderRadius;
 }
 
 .form {
   @include verticalGap(32px);
+  background-color: #DE9AB7;
+  /*Rosa bajito: FEDEEB
+    rosa medio: DE9AB7
+    rosa fuerte:7B1B70
+  */
 }
 
 .item {
   @include horizontalGap(32px);
   display: flex;
   align-items: center;
+
 }
+
 
 .input,
 .button {
   max-width: 540px;
+}
+.button{
+  background-color: #7B1B70;
+  transition: all .25s !important;
+  &:hover {
+    background-color: #7b1b706d !important;
+  }
 }
 
 .input {
   flex: 1;
   display: grid;
   grid-template-columns: 4fr 6fr;
+
+  color: #7B1B70 !important;
+  font-size: large !important;
+  font-weight: 500 !important; 
 }
 
 .error {

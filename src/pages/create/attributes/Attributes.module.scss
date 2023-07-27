@@ -22,9 +22,30 @@
   }
 }
 
+.moveright{
+  flex: 1;
+  color: #7B1B70;
+  font-size: large;
+  font-weight: 500;
+}
+
+.moveleft{
+  flex: 1;
+  max-width: 540px;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  color: #7B1B70 !important;
+  background-color: #DE9AB7 !important;
+
+}
+
 .input {
   display: grid;
   grid-template-columns: 4fr 6fr;
+  
+  color: #7B1B70;
+  font-size: large;
+  font-weight: 500;
 }
 
 .error {

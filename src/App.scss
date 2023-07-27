@@ -11,14 +11,34 @@
   box-sizing: content-box;
 }
 
+.Button-module_secondary__j-3rj {
+  background-color: #7B1B70 !important;
+  transition: all .25s !important;
+  &:hover {
+    background-color: #7b1b706d !important;
+  }
+}
+
+.FileInput-module_text__EOZei{
+  color: #7B1B70 !important;
+  font-size: large !important;
+  font-weight: 500 !important; 
+}
+
+.Input-module_wrapper__dpfdV,.Textarea-module_textarea__yE6jp{
+  background-color: #7b1b7061;
+}
+
 main {
   flex: 1;
   padding: 30px 0 60px;
   position: relative; // for loaders
+  background-color: #FEDEEB;
 }
 
 body {
-  background: $bgColor url(assets/images/bg.svg);
+  background: #FEDEEB;
+  
 }
 
 .link-text {

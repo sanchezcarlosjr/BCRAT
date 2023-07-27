@@ -8,15 +8,15 @@ type Props = {
   onRemoveButtonClick: (index: number) => void;
 };
 
+
 function Attributes({ register, fields, onRemoveButtonClick }: Props) {
   const getFields = () =>
     fields.map(({ id }, index) => (
       <div key={id} className={styles.field}>
-        <div className={styles.inputs}>
-          <Input label="Key" className={styles.input} {...register(`attributes.${index}.key`, { required: true })} />
+        <div className={styles.moveleft}>
+          <Input className={styles.input } disabled {...register(`attributes.${index}.key`, { required: true })} />
           <Input
-            label="Value"
-            className={styles.input}
+            className={styles.moveright}
             {...register(`attributes.${index}.value`, { required: true })}
           />
         </div>
